@@ -307,6 +307,7 @@
         class="generate-button"
         type="button"
         :disabled="!canGenerate || generationStatus === 'loading'"
+
         @click="onClickGenerate"
       >
         GENERATE
@@ -1341,10 +1342,10 @@ export default defineComponent({
 
 [data-theme="light_theme"] .generate-button, [data-theme="blog_theme"] .generate-button {
     color: #eee;
-} 
+}
 
 .generate-button:disabled {
-  cursor: default;
+  cursor: not-allowed;
   opacity: 0.7;
 }
 
